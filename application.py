@@ -139,7 +139,7 @@ if st.button('Generate profile!'):
         col1, col2, col3 = st.columns(3, gap="medium")
         with col1:
             
-            st.image("https://img1.od-cdn.com/ImageType-100/12293-1/%7B054D9E58-B7ED-45E4-9C97-CCEE8BFD6433%7DIMG100.JPG, width = 150, use_column_width="always")
+            st.image("https://img1.od-cdn.com/ImageType-100/12293-1/%7B054D9E58-B7ED-45E4-9C97-CCEE8BFD6433%7DIMG100.JPG", width = 150, use_column_width="always")
             st.link_button("Click to read more","https://nlb.overdrive.com/media/5054551", use_container_width=True)
 
         with col2:
