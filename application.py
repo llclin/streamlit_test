@@ -16,7 +16,7 @@ import pickle
 import pandas as pd
 
 
-st.title("Understanding you and your partner's attachment style :grin:")
+st.title("Understanding you and your partner's attachment style :blush:")
 st.subheader("The application is developed to help you understand you and your partner's attachment style, and provide necessary resources to help you in your relationship.")
 
 st.image("https://clipart-library.com/images/rcnrp8jzi.jpg", caption="Understanding you and your partner's attachment style", use_column_width=True)
