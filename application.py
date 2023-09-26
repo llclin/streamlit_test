@@ -111,18 +111,18 @@ if st.button('Generate profile!'):
         col1, col2, col3 = st.columns(3, gap="medium")
         with col1:
             
-            st.image('https://m.media-amazon.com/images/I/61guLW+ROHL._SY522_.jpg', width = 150, use_column_width="always")
-            st.link_button("Click to read more","https://www.amazon.sg/Healing-Avoidant-Attachment-Style-Workbook/dp/B0C9SFXJPG/ref=sr_1_1?qid=1695651557&refinements=p_27%3AHenry+Gottman&s=books&sr=1-1", use_container_width=True)
+            st.image('https://img1.od-cdn.com/ImageType-100/1430-1/%7BC70BEA75-D280-43F2-AEFF-1E5EEB5CD8F6%7DImg100.jpg', width = 150, use_column_width="always")
+            st.link_button("Click to read more","https://nlb.overdrive.com/media/319596", use_container_width=True)
 
         with col2:
             
-            st.image("https://m.media-amazon.com/images/I/61+YecoCnSL._SY522_.jpg", width = 150, use_column_width="always")
-            st.link_button("Click to read more","https://www.amazon.sg/Avoidant-Attachment-More-Effective-Relationships/dp/B0B2HWK7KD/ref=sr_1_3?crid=SD48F1UGEPHR&keywords=avoidant+attachment&qid=1695651614&s=books&sprefix=avoidant+attachment%2Cstripbooks%2C253&sr=1-3", use_container_width=True)
+            st.image("https://img1.od-cdn.com/ImageType-100/0044-1/%7BED3699EC-C269-4B4E-AA44-9BC0970FB606%7DImg100.jpg", width = 150, use_column_width="always")
+            st.link_button("Click to read more","https://nlb.overdrive.com/media/3682131", use_container_width=True)
 
         with col3:
             
-            st.image("https://m.media-amazon.com/images/I/61V-kq-2-9L._SY522_.jpg", width = 150,use_column_width="always")
-            st.link_button("Click to read more","https://www.amazon.sg/Avoidant-Attachment-Recovery-Relationships-Unhealthy/dp/B0CHLH9WWS/ref=sr_1_5?crid=SD48F1UGEPHR&keywords=avoidant+attachment&qid=1695651689&s=books&sprefix=avoidant+attachment%2Cstripbooks%2C253&sr=1-5", use_container_width=True)
+            st.image("https://img1.od-cdn.com/ImageType-100/1430-1/%7BEC8D5943-429E-4F9C-B446-5D6600E3AB57%7DImg100.jpg", width = 150,use_column_width="always")
+            st.link_button("Click to read more","https://nlb.overdrive.com/media/322424", use_container_width=True)
 
 
 
@@ -163,22 +163,22 @@ if st.button('Generate profile!'):
 
         st.video("https://www.youtube.com/watch?v=l8vcCPakbds", format="video/mp4", start_time=0)
         
-        st.write("Below are some book recommendations suitable for your relationship with your partner :wink:")
+        st.write("Below are some book recommendations for you :wink:")
         col1, col2, col3 = st.columns(3, gap="medium")
         with col1:
             
-            st.image('https://m.media-amazon.com/images/I/61guLW+ROHL._SY522_.jpg', width = 150, use_column_width="always")
-            st.link_button("Click to read more","https://www.amazon.sg/Healing-Avoidant-Attachment-Style-Workbook/dp/B0C9SFXJPG/ref=sr_1_1?qid=1695651557&refinements=p_27%3AHenry+Gottman&s=books&sr=1-1", use_container_width=True)
+            st.image('https://img1.od-cdn.com/ImageType-100/1523-1/%7BD7320176-CE10-4830-9F86-2142B5F595B3%7DImg100.jpg', width = 150, use_column_width="always")
+            st.link_button("Click to read more","https://nlb.overdrive.com/media/204069", use_container_width=True)
 
         with col2:
-            
-            st.image("https://m.media-amazon.com/images/I/61+YecoCnSL._SY522_.jpg", width = 150, use_column_width="always")
-            st.link_button("Click to read more","https://www.amazon.sg/Avoidant-Attachment-More-Effective-Relationships/dp/B0B2HWK7KD/ref=sr_1_3?crid=SD48F1UGEPHR&keywords=avoidant+attachment&qid=1695651614&s=books&sprefix=avoidant+attachment%2Cstripbooks%2C253&sr=1-3", use_container_width=True)
+    
+            st.image('https://img1.od-cdn.com/ImageType-100/1430-1/%7BC70BEA75-D280-43F2-AEFF-1E5EEB5CD8F6%7DImg100.jpg', width = 150, use_column_width="always")
+            st.link_button("Click to read more","https://nlb.overdrive.com/media/319596", use_container_width=True)
 
         with col3:
-            
-            st.image("https://m.media-amazon.com/images/I/61V-kq-2-9L._SY522_.jpg", width = 150,use_column_width="always")
-            st.link_button("Click to read more","https://www.amazon.sg/Avoidant-Attachment-Recovery-Relationships-Unhealthy/dp/B0CHLH9WWS/ref=sr_1_5?crid=SD48F1UGEPHR&keywords=avoidant+attachment&qid=1695651689&s=books&sprefix=avoidant+attachment%2Cstripbooks%2C253&sr=1-5", use_container_width=True)
+    
+            st.image("https://img1.od-cdn.com/ImageType-100/0044-1/%7BED3699EC-C269-4B4E-AA44-9BC0970FB606%7DImg100.jpg", width = 150, use_column_width="always")
+            st.link_button("Click to read more","https://nlb.overdrive.com/media/3682131", use_container_width=True)
 
 
 
