@@ -47,6 +47,10 @@ answer_3 = st.text_area("***Please share how you felt about an argument you had 
 partner = st.selectbox(
     '***How does your partner typically react in an argument?***',
     ('My partner will give me a cold shoulder', 'My partner will become very emotional'))
+if partner == "My partner will give me a cold shoulder":
+    final_partner ="avoidant"
+else:
+    final_partner="anxious"
 
 
 
@@ -60,7 +64,7 @@ if st.button('Generate my profile!'):
         record_Series = pd.Series(record) 
         prediction = model.predict(record_Series)
         
-        partner_record_Series = pd.Series(partner)
+        partner_record_Series = pd.Series(final_partner)
         partner_prediction = model.predict(partner_record_Series)
         
 
@@ -151,7 +155,7 @@ if st.button('Generate my profile!'):
 
 
 
-    elif prediction == 1 and partner_prediction == 0:
+    else: #prediction == 1 and partner_prediction == 0:
         st.divider()
         st.write("Your attachment style is ***Anxious*** whereas your partner's attachment style is ***Avoidant***.")
         st.write("Differences can be overcomed when we know how to communicate with different attachment styles. View the video below to understand more.")
