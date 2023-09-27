@@ -17,6 +17,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
+
 st.title("Understanding you and your partner's attachment style :blush:")
 st.subheader("The application is developed to help you understand you and your partner's attachment style, and provide necessary resources to help you in your relationship.")
 
@@ -69,18 +70,18 @@ if st.button('Generate profile!'):
         user = final_answer_1 + " " + final_answer_2 + " " + answer_3
         user_list = user.split(" ")
         user_record = vectorizer.transform(user_list)
-        prediction = model.predict(user_record)
+        prediction = round(np.mean(model.predict(user_record)))
         
         
         partner_list = final_partner.split(" ")
         partner_record = vectorizer.transform(partner_list)
-        partner_prediction = model.predict(partner_record)
+        partner_prediction = round(np.mean(model.predict(partner_record)))
         
 
         
     st.success('Done!')
     
-    if prediction == 1 and partner_prediction == 1:
+    if prediction ==1  and partner_prediction ==1 :
        st.divider() 
        st.write("You and your partner have the same attachment style which is ***Anxious***.")
        st.write("Anxious attachment style tend to be nervous and stressed about their relationships. View the video below to understand more.")
