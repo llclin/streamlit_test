@@ -128,10 +128,10 @@ if st.button('Generate profile!'):
             st.link_button("Click to read more","https://nlb.overdrive.com/media/322424", use_container_width=True)
 
         
-        col4, col5 = st.columns(2, gap="medium")
-        with col4:
+        
+        with st.chat_message("user"):
+            st.write("Hello 👋")
             st.write("If you need more support and would like to chat with someone:") 
-        with col5:
             st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
 
 
