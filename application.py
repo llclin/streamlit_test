@@ -97,6 +97,7 @@ if st.button('Generate profile!'):
            st.link_button("Click to read more","https://nlb.overdrive.com/media/5168313", use_container_width=True)
            
 
+       st.write(" ")
        with st.chat_message("user"):
            st.write("Hello👋 We hope that the above resources have been helpful.")
            st.write("If you need more support and would like to chat with someone:") 
@@ -131,7 +132,7 @@ if st.button('Generate profile!'):
             st.link_button("Click to read more","https://nlb.overdrive.com/media/322424", use_container_width=True)
 
         
-        
+        st.write(" ")
         with st.chat_message("user"):
             st.write("Hello👋 We hope that the above resources have been helpful.")
             st.write("If you need more support and would like to chat with someone:") 
@@ -163,7 +164,7 @@ if st.button('Generate profile!'):
             st.image("https://img1.od-cdn.com/ImageType-100/1523-1/%7B73A45BAA-C1B6-4DE1-A907-97F1DEBCE31E%7DImg100.jpg", width = 150,use_column_width="always")
             st.link_button("Click to read more","https://nlb.overdrive.com/media/5168313", use_container_width=True)
         
-
+        st.write(" ")
         with st.chat_message("user"):
             st.write("Hello👋 We hope that the above resources have been helpful.")
             st.write("If you need more support and would like to chat with someone:") 
@@ -195,7 +196,7 @@ if st.button('Generate profile!'):
             st.image("https://img1.od-cdn.com/ImageType-100/0044-1/%7BED3699EC-C269-4B4E-AA44-9BC0970FB606%7DImg100.jpg", width = 150, use_column_width="always")
             st.link_button("Click to read more","https://nlb.overdrive.com/media/3682131", use_container_width=True)
 
-
+        st.write(" ")
         with st.chat_message("user"):
             st.write("Hello👋 We hope that the above resources have been helpful.")
             st.write("If you need more support and would like to chat with someone:") 
