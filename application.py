@@ -57,17 +57,23 @@ else:
 
 with open("our_model.pkl", 'rb') as our_model:
     model = pickle.load(our_model)
+
+with open('our_vectorizer.pkl', 'rb') as vect:
+    vectorizer = pickle.load(vect)
     
-vectorizer = TfidfVectorizer(max_features=450, min_df=2, max_df=.9, ngram_range=(1,1))
+
 
 if st.button('Generate profile!'):
     with st.spinner('Wait for it...'):
         
-        record = final_answer_1 + " " + final_answer_2 + " " + answer_3
-        record_final = vectorizer.fit_transform(record)
-        prediction = model.predict(record_final)
+        user = final_answer_1 + " " + final_answer_2 + " " + answer_3
+        user_list = user.split(" ")
+        user_record = vectorizer.transform(user_list)
+        prediction = model.predict(user_record)
         
-        partner_record = vectorizer.fit_transform(final_partner)
+        
+        partner_list = final_partner.split(" ")
+        partner_record = vectorizer.transform(partner_list)
         partner_prediction = model.predict(partner_record)
         
 
