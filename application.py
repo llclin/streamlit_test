@@ -127,7 +127,11 @@ if st.button('Generate profile!'):
             st.image("https://img1.od-cdn.com/ImageType-100/1430-1/%7BEC8D5943-429E-4F9C-B446-5D6600E3AB57%7DImg100.jpg", width = 150,use_column_width="always")
             st.link_button("Click to read more","https://nlb.overdrive.com/media/322424", use_container_width=True)
 
-        st.write("If you need more support and would like to chat with someone:") 
+        
+        col4, col5 = (2, gap="medium")
+        with col4:
+            st.write("If you need more support and would like to chat with someone:") 
+        with col5:
         st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
 
 
