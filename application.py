@@ -96,8 +96,11 @@ if st.button('Generate profile!'):
            st.image("https://img1.od-cdn.com/ImageType-100/1523-1/%7B73A45BAA-C1B6-4DE1-A907-97F1DEBCE31E%7DImg100.jpg", width = 150,use_column_width="always")
            st.link_button("Click to read more","https://nlb.overdrive.com/media/5168313", use_container_width=True)
            
-       st.write("If you need more support and would like to chat with someone: ") 
-       st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
+
+       with st.chat_message("user"):
+           st.write("Hello👋 We hope that the above resources have been helpful.")
+           st.write("If you need more support and would like to chat with someone:") 
+           st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
        
 
       
@@ -130,7 +133,7 @@ if st.button('Generate profile!'):
         
         
         with st.chat_message("user"):
-            st.write("Hello 👋")
+            st.write("Hello👋 We hope that the above resources have been helpful.")
             st.write("If you need more support and would like to chat with someone:") 
             st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
 
@@ -160,8 +163,11 @@ if st.button('Generate profile!'):
             st.image("https://img1.od-cdn.com/ImageType-100/1523-1/%7B73A45BAA-C1B6-4DE1-A907-97F1DEBCE31E%7DImg100.jpg", width = 150,use_column_width="always")
             st.link_button("Click to read more","https://nlb.overdrive.com/media/5168313", use_container_width=True)
         
-        st.write("If you need more support and would like to chat with someone:") 
-        st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
+
+        with st.chat_message("user"):
+            st.write("Hello👋 We hope that the above resources have been helpful.")
+            st.write("If you need more support and would like to chat with someone:") 
+            st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
 
 
     else: #prediction == 1 and partner_prediction == 0:
@@ -190,6 +196,8 @@ if st.button('Generate profile!'):
             st.link_button("Click to read more","https://nlb.overdrive.com/media/3682131", use_container_width=True)
 
 
-        st.write("If you need more support and would like to chat with someone: ") 
-        st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
+        with st.chat_message("user"):
+            st.write("Hello👋 We hope that the above resources have been helpful.")
+            st.write("If you need more support and would like to chat with someone:") 
+            st.link_button("Click for more assistance", "https://familyassist.msf.gov.sg/content/resources/programmes/online-counselling/")
 
