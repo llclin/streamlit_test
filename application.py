@@ -61,11 +61,11 @@ if st.button('Generate profile!'):
     with st.spinner('Wait for it...'):
         
         record = final_answer_1 + " " + final_answer_2 + " " + answer_3
-        record_Series = pd.Series(record) 
-        prediction = model.predict(record_Series)
+        #record_Series = pd.Series(record) 
+        prediction = model.predict(record)
         
-        partner_record_Series = pd.Series(final_partner)
-        partner_prediction = model.predict(partner_record_Series)
+        #partner_record_Series = pd.Series(final_partner)
+        partner_prediction = model.predict(final_partner)
         
 
         
