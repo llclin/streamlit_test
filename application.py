@@ -14,6 +14,7 @@ import time
 from PIL import Image
 import pickle
 import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 st.title("Understanding you and your partner's attachment style :blush:")
@@ -56,16 +57,18 @@ else:
 
 with open("our_model.pkl", 'rb') as our_model:
     model = pickle.load(our_model)
+    
+vectorizer = TfidfVectorizer(max_features=450, min_df=2, max_df=.9, ngram_range=(1,1))
 
 if st.button('Generate profile!'):
     with st.spinner('Wait for it...'):
         
         record = final_answer_1 + " " + final_answer_2 + " " + answer_3
-        #record_Series = pd.Series(record) 
-        prediction = model.predict(record)
+        record_final = vectorizer.fit_transform(record)
+        prediction = model.predict(record_final)
         
-        #partner_record_Series = pd.Series(final_partner)
-        partner_prediction = model.predict(final_partner)
+        partner_record = vectorizer.fit_transform(final_partner)
+        partner_prediction = model.predict(partner_record)
         
 
         
