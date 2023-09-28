@@ -53,7 +53,7 @@ with open('our_vectorizer.pkl', 'rb') as vect:
     
 
 
-if st.button('Generate profile!'):
+if st.button('Generate profiles!'):
     with st.spinner('Wait for it...'):
         
         user = answer_1 + " " + answer_2
@@ -73,7 +73,8 @@ if st.button('Generate profile!'):
     if prediction ==1  and partner_prediction ==1 :
        st.divider() 
        st.write("You and your partner have the same attachment style which is ***Anxious***.")
-       st.write("Anxious attachment style tend to be nervous and stressed about their relationships. View the video below to understand more.")
+       st.write("Anxious attachment styles are less likely to communicate their needs directly (i.e. make inferences from the narratives in their head rather than from reality). When a couple are both of anxious types, they should try to invite each other to communicate directly like frequently asking them what they think or feel about something.")
+       st.write("View the video below to understand more.")
        st.divider()
 
        st.video("https://www.youtube.com/watch?v=EdpaCMW1PHw&ab_channel=HeidiPriebe", format="video/mp4", start_time=0)
@@ -108,7 +109,8 @@ if st.button('Generate profile!'):
     elif prediction == 0 and partner_prediction == 0:
         st.divider()
         st.write("You and your partner have the same attachment style which is ***Avoidant***.")
-        st.write("Avoidant attachment style tend to be independent, self-directed, and often uncomfortable with intimacy. View the video below to understand more.")
+        st.write("Avoidant attachment styles do not feel comfortable sharing their emotions openly (i.e. they prefer to keep their thoughts to themselves). When couples are both of avoidant, they should commit to expressing themselves more to each other,  so that misunderstandings can be avoided.")
+        st.write("View the video below to understand more.")
         st.divider()
 
         st.video("https://www.youtube.com/watch?v=zv7ROoYCi6s&ab_channel=HeidiPriebe", format="video/mp4", start_time=0)
@@ -141,7 +143,8 @@ if st.button('Generate profile!'):
     elif prediction == 0 and partner_prediction == 1:
         st.divider()
         st.write("Your attachment style is ***Avoidant*** whereas your partner's attachment style is ***Anxious***.")
-        st.write(" Differences can be overcomed when we know how to communicate with different attachment styles. View the video below to understand more.")
+        st.write("Avoidant attachment styles do not feel comfortable sharing their emotions openly (i.e. keep their thoughts to themselves). Anxious attachment styles on the other hand are less likely to communicate their needs directly (i.e. make inferences from the narratives in their head rather than from reality). Opening up to your partner and reciprocating their emotions will be the key in having successful communication.")
+        st.write("View the video below to understand more.")
         st.divider()
 
         st.video("https://www.youtube.com/watch?v=yMQ-cO-Jqmg", format="video/mp4", start_time=0)
@@ -173,7 +176,8 @@ if st.button('Generate profile!'):
     else: #prediction == 1 and partner_prediction == 0:
         st.divider()
         st.write("Your attachment style is ***Anxious*** whereas your partner's attachment style is ***Avoidant***.")
-        st.write("Differences can be overcomed when we know how to communicate with different attachment styles. View the video below to understand more.")
+        st.write("Anxious attachment styles are less likely to communicate their needs directly (i.e. make inferences from the narratives in their head rather than from reality). Avoidant attachment styles on the other hand do not feel comfortable sharing their emotions openly (i.e. keep their thoughts to themselves). Trusting your partner and getting your partner to open up to you will be the key in having successful communication.")
+        st.write("View the video below to understand more.")
         st.divider()
 
         st.video("https://www.youtube.com/watch?v=l8vcCPakbds", format="video/mp4", start_time=0)
