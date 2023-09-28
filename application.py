@@ -35,8 +35,8 @@ answer_2 = st.text_area("***Please share how you felt about an argument you had 
 
 
 partner_1 = st.selectbox(
-    '***Does your partner enjoy intimacy?***',
-    ('No, my partner does not enjoy intimacy', 'Yes my partner enjoys it'))
+    '***Does your partner like intimacy?***',
+    ('No, my partner does not like intimacy', 'Yes my partner likes it'))
 
 
 partner_2 = st.radio(
