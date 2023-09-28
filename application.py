@@ -36,7 +36,7 @@ answer_2 = st.text_area("***Please share how you felt about an argument you had 
 
 partner_1 = st.selectbox(
     '***Does your partner enjoy intimacy?***',
-    ('No, my partner do not like intimacy', 'Yes my partner likes it'))
+    ('No, my partner does not enjoy intimacy', 'Yes my partner enjoys it'))
 
 
 partner_2 = st.radio(
@@ -109,7 +109,7 @@ if st.button('Generate profiles!'):
     elif prediction == 0 and partner_prediction == 0:
         st.divider()
         st.write("You and your partner have the same attachment style which is ***Avoidant***.")
-        st.write("Avoidant attachment styles do not feel comfortable sharing their emotions openly (i.e. they prefer to keep their thoughts to themselves). When couples are both of avoidant, they should commit to expressing themselves more to each other,  so that misunderstandings can be avoided.")
+        st.write("Avoidant attachment styles do not feel comfortable sharing their emotions openly (i.e. they prefer to keep their thoughts to themselves). When couples are both avoidant, they should commit to expressing themselves more to each other,  so that misunderstandings can be avoided.")
         st.write("View the video below to understand more.")
         st.divider()
 
