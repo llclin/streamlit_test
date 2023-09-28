@@ -36,7 +36,7 @@ answer_2 = st.text_area("***Please share how you felt about an argument you had 
 
 partner_1 = st.selectbox(
     '***How does your partner typically react in an argument?***',
-    ('My partner will give me a cold shoulder', 'My partner will become very emotional'))
+    ('My partner will push me away', 'My partner will become very emotional'))
 
 
 partner_2 = st.radio(
