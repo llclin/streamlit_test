@@ -68,14 +68,14 @@ if st.button('Generate profile!'):
     with st.spinner('Wait for it...'):
         
         user = final_answer_1 + " " + final_answer_2 + " " + answer_3
-        user_list = user.split(" ")
-        user_record = vectorizer.transform(user_list)
-        prediction = round(np.mean(model.predict(user_record)))
+        user_series = pd.Series(user)
+        user_record = vectorizer.transform(user_series)
+        prediction = model.predict(user_record)
         
         
-        partner_list = final_partner.split(" ")
-        partner_record = vectorizer.transform(partner_list)
-        partner_prediction = round(np.mean(model.predict(partner_record)))
+        partner_series = pd.Series(final_partner)
+        partner_record = vectorizer.transform(partner_series)
+        partner_prediction = model.predict(partner_record)
         
 
         
