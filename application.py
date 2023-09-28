@@ -28,31 +28,20 @@ st.divider()
 
 answer_1 = st.selectbox(
     '***How will you react if your partner leaves you?***',
-    ('That is his or her loss', 'I will be sad, devastated'))
-if answer_1 =='That is his or her loss':
-    final_answer_1 = "avoidant"
-else:
-    final_answer_1 = "anxious"
-
-answer_2 = st.radio(
-    "***How often do you talk to your partner about your feelings?***",
-    ["Seldom", "Quite Often"])
-
-if answer_2 =='Seldom':
-    final_answer_2 = "avoidant"
-else:
-    final_answer_2 = "anxious"
-
-answer_3 = st.text_area("***Please share how you felt about an argument you had with your partner.***")
+    ('I do not wish to think about it yet', 'I will be sad, devastated'))
 
 
-partner = st.selectbox(
+answer_2 = st.text_area("***Please share how you felt about an argument you had with your partner.***")
+
+
+partner_1 = st.selectbox(
     '***How does your partner typically react in an argument?***',
     ('My partner will give me a cold shoulder', 'My partner will become very emotional'))
-if partner == "My partner will give me a cold shoulder":
-    final_partner ="avoidant"
-else:
-    final_partner="anxious"
+
+
+partner_2 = st.radio(
+    "***Does your partner text you repeatedly when you did not reply?***",
+    ["Yes, my partner will text me", "No, not actually"])
 
 
 
@@ -67,13 +56,13 @@ with open('our_vectorizer.pkl', 'rb') as vect:
 if st.button('Generate profile!'):
     with st.spinner('Wait for it...'):
         
-        user = final_answer_1 + " " + final_answer_2 + " " + answer_3
+        user = answer_1 + " " + answer_2
         user_series = pd.Series(user)
         user_record = vectorizer.transform(user_series)
         prediction = model.predict(user_record)
         
-        
-        partner_series = pd.Series(final_partner)
+        partner = partner_1 + " " + partner_2
+        partner_series = pd.Series(partner)
         partner_record = vectorizer.transform(partner_series)
         partner_prediction = model.predict(partner_record)
         
